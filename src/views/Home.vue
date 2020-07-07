@@ -62,7 +62,7 @@ export default {
     createPlace: function() {
       var params = {
         name: this.newPlaceName,
-        description: this.newPlaceAddress
+        address: this.newPlaceAddress
       };
       axios
         .post("/api/places", params)
